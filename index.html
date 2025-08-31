@@ -47,9 +47,6 @@ SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
             }
 
             try {
-                showUi(spinner);
-                status.innerHTML = 'Loading...';
-
                 const instance = await qtLoad({
                     qt: {
                         onLoaded: () => showUi(screen),
